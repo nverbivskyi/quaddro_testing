@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Test_CustomerAvatar::css/avatar.css"/>
+        <script src="Test_CustomerAvatar::js/avatar-validation.js"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="customer_edit" template="Test_CustomerAvatar::form/edit.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Test\CustomerAvatar\ViewModel\GetApi</argument>
+                </arguments>
+            </referenceBlock>
+        </referenceContainer>
+    </body>
+</page>

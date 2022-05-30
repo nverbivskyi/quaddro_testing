@@ -1,0 +1,19 @@
+{
+    "name": "test/customer-avatar",
+    "description": "Customer avatar",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "require": {
+        "php": "~7.4.0",
+        "magento/product-community-edition": "2.4.2"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Test\\CustomerAvatar\\": ""
+        }
+    }
+}
+
